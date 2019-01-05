@@ -1,0 +1,25 @@
+group 'netty'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.5
+
+repositories {
+    maven {url 'http://maven.aliyun.com/nexus/content/repositories/central/'}
+    mavenCentral()
+}
+
+subprojects{
+    ext{
+        servletApiVersion="3.1.0";
+        springVersion = "4.3.5.RELEASE"
+        springBootVersion = "1.4.3.RELEASE"
+    }
+}
+
+dependencies {
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.0'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}

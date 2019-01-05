@@ -1,0 +1,16 @@
+.gradle
+.idea
+*/.gradle
+*/build
+**.xml
+.idea/**.xml
+**.iml
+**.ipr
+**.iws
+*.iml
+*.ipr
+*.iws
+*/gradle
+
+*/gradlew
+*/gradlew.bat
